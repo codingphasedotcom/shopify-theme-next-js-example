@@ -1,0 +1,41 @@
+@use './reset';
+@use '../components/components';
+@use './bootstrap/scss/bootstrap.scss';
+
+body{
+  background-color: #f7f9fd;
+}
+a{
+  &:hover{
+    color: rgb(248, 76, 76);
+  }
+}
+
+.fixed-nav{
+  &.transparent-nav{
+    .header{
+      background: transparent;
+      a {
+        color: white;
+      }
+      .header1__collection-link, .header2__collection-link, .header3__collection-link{
+        .collection-link__sub-links{
+          a {
+            color: black;
+            &:hover{
+              color: red;
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  .header{
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
+}
+
+
